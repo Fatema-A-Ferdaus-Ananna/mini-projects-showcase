@@ -52,10 +52,12 @@ nav{
 }
 
 .column:hover{
+    text-shadow: 0px 0px 5px #ffffff;
     color: var(--main-color);
     background: #e3fef73d;
     transition: 0.5s;
     border: 1px solid #E3FEF7;
+    cursor: pointer;
 }
 
 
