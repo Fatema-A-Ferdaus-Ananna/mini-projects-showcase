@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #ED9455;
+    --text-body: #422200;
+    --div-color1: #FFFBDA;
+    --div-color2: #FFBB70;
+}
+
+h2{
+    margin: 20px 0px 8px 0px;
+    text-align: center;
+    color: var(--text-color);
+    background-color: #75a47f00;
+}
+
+.reviews{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(199, 15, 15, 0);
+}
+
+.review{
+    margin: .5rem;
+    padding: 1rem;
+    width: calc(90%/3);
+    background: rgba(102, 51, 153, 0);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: All 0.5s;
+}
+
+.review:hover{
+    background: var(--div-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5%);
+    transition: transform 0.5s;
+}
+
+.user-name{
+    color: var(--text-color);
+}
+
+.review-body{
+    margin-top: .5rem;
+    color: var(--text-body);
+}
+
+.product-cards{
+    padding: 1rem 0rem 1rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(243, 135, 135, 0);
+}
+
+.single-card{
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(90%/3);
+    background: rgba(102, 51, 153, 0);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: All 0.5s;
+    color: var(--text-color);
+}
+
+.single-card:hover{
+    background: var(--text-color);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: All 0.5s;
+}
+
+.title{
+    text-align: justify;
+    font-weight: 200;
+}
+
+.img{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+   width: 100%;
+   max-width: 300px;
+   max-height: 300px;
+   border-radius: 1rem;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.description{
+    margin: 1rem 0rem 1rem 0rem;
+    background: #fffbda00;
+    color: var(--text-body);
+    text-align: justify;
+}
+
+.footer{
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--div-color2);
+    color: var(--text-body);
+}
+
+/* responsive */
+
+@media screen and (max-width: 990px) {
+    .review{
+        width: calc(90%/2);
+    }
+
+    .single-card{
+        width: calc(90%/2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .review{
+        width: calc(90%/1);
+    }
+
+    .single-card{
+        width: calc(90%/1);
+    }
+}
