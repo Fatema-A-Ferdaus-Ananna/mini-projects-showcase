@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="todoStyle.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="title">Todo App</h2>
+            <div class="body">
+                <form class="todo-form">
+                    <input type="text" placeholder="Enter a todo here" id="input-todo" required>
+                    <button type="submit" class="btn" id="addTodoBtn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>  
+                </form>
+
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="todoScript.js"></script>
+</body>
+</html>
