@@ -1,4 +1,5 @@
-const container = document.querySelector(".container");
+import { CreateTodo } from "./classes/CreatTodo.js";
+
 const todo_form = document.querySelector(".todo-form");
 const input_todo = document.querySelector("#input-todo");
 const addTodoBtn = document.querySelector("#addTodoBtn");
@@ -7,11 +8,11 @@ const message = document.querySelector("#message");
 
 
 //create todo
-const createTodo = (todo_id, todoValue) =>{
+const createTodo = (newTodo) =>{
     const todoElement = document.createElement("li");
     todoElement.classList.add("li-style");
-    todoElement.id = todo_id;
-    todoElement.innerHTML = `<span>${todoValue}</span>
+    todoElement.id = newTodo.todo_id;
+    todoElement.innerHTML = `<span>${newTodo.todoValue}</span>
     <span><button class="delete-btn" id="deleteTodoBtn">
         <i class="fa-solid fa-xmark"></i>
     </span>` 
@@ -62,16 +63,15 @@ const addTodo = (event) =>{
     const todo_id = Date.now().toString();
     console.log(todo_id);
 
-    createTodo(todo_id, todoValue);
+    const newTodo = new CreateTodo(todo_id, todoValue);
+    console.log(newTodo);
+
+    createTodo(newTodo);
     showMessage("Todd is Added Successfully!", "add");
 
     //adding  too to local storage
-    // const todos = gettodosFromLocalStorage();
-    // todos.push({todo_id, todoValue});
-    // localStorage.setItem("mytodo", JSON.stringify(todos));
-
     const todos = getTodosFromLocalStorage();
-    todos.push({todo_id, todoValue});
+    todos.push(newTodo);
     localStorage.setItem("mytodos", JSON.stringify(todos));
 
     console.log(todos);
@@ -82,7 +82,7 @@ const addTodo = (event) =>{
 const loadTodos = () =>{
     console.log(`loaded`);
     const todos = getTodosFromLocalStorage();
-    todos.map((todo)=> createTodo(todo.todo_id, todo.todoValue));
+    todos.map((todo)=> createTodo(todo));
 };
 
 //listener

@@ -178,7 +178,17 @@ input:focus{
 }
 
 .delete-btn:hover{
-    color: #102C57;
+    color: #192d37;
     background: rgb(255, 255, 255);
     transition: 1s;
+}
+
+.footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000f16;
+    color: #ffffff;
 }
