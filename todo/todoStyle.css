@@ -193,7 +193,8 @@ input:focus {
 
 @media only screen and (max-width: 750px) {
   .card {
-    min-height: 70vh;
+    min-height: 400px;
+    max-height: 512px;
     width: 80%;
   }
 }
