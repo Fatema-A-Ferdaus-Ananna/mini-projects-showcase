@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Project Showcase</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <h3>Project Showcase</h3>
-            <div class="preference">
-                <label for="selectBgColor">Select Background Color :</label>
-                
-                <select name="selectBgColor" id="selectBgColor">
-                    <option value="#003C43">Default</option>
-                    <option value="black">Black</option>
-                    <option value="indigo">Indigo</option>
-                    <option value="#000f2e">Navy</option>
-                    <option value="#3a1801">Chocolate</option>
-                    <option value="maroon">Maroon</option>
-                    <option value="purple">Purple</option>
-                </select>
-                <button type="submit" class="preference-reset">Reset</button>
-            </div>
-        </nav>
-        <div class="row">
-            <div class="column" onclick="explorePriject('slideShows/slideShow_1/slideShow.html')">
-                <a id="p1" href="#" >Slideshow Project</a>
-            </div>
+      <nav>
+        <h3>Project Showcase</h3>
+        <div class="preference">
+          <label for="selectBgColor">Select Background Color :</label>
 
-            <div class="column">
-                <a href="#">Pending</a>
-            </div>
-
-            <div class="column">
-                <a href="#">Pending</a>
-            </div>
+          <select name="selectBgColor" id="selectBgColor">
+            <option value="#003C43">Default</option>
+            <option value="black">Black</option>
+            <option value="indigo">Indigo</option>
+            <option value="#000f2e">Navy</option>
+            <option value="#3a1801">Chocolate</option>
+            <option value="maroon">Maroon</option>
+            <option value="purple">Purple</option>
+          </select>
+          <button type="submit" class="preference-reset">Reset</button>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="column" onclick="explorePriject('slideShows/slideShow_1/slideShow.html')">
+          <a id="p1" href="#">Slideshow Project 1</a>
         </div>
 
-        <div class="row">
-            <div class="column"  onclick="explorePriject('cards/dynamicCard/dynamicCard.html')">
-                <a id="p4" href="#">Dynamic Product Card - Using Dummy Api</a>
-            </div>
-
-            <div class="column" onclick="explorePriject('todo/todo.html')">
-                <a href="#">Mini Todo App - Browser</a>
-            </div>
-
-            <div class="column">
-                <a href="#">Pending</a>
-            </div>
+        <div
+          class="column"
+          onclick="explorePriject('slideShows/slideShow_2/singleRow_slider.html')"
+        >
+          <a href="#">Slideshow Project 2</a>
         </div>
+
+        <div class="column">
+          <a href="#">Pending</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column" onclick="explorePriject('cards/dynamicCard/dynamicCard.html')">
+          <a id="p4" href="#">Dynamic Product Card - Using Dummy Api</a>
+        </div>
+
+        <div class="column" onclick="explorePriject('todo/todo.html')">
+          <a href="#">Mini Todo App - Browser</a>
+        </div>
+
+        <div class="column">
+          <a href="#">Pending</a>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <p>© fatema.a.ferdaus@gmail.com</p>
+      <p>© fatema.a.ferdaus@gmail.com</p>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
